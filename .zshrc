@@ -12,13 +12,15 @@ alias cat="bat"
 alias ls="logo-ls"
 alias code="codium"
 alias sudo="doas"
-alias config='/usr/bin/git --git-dir=$HOME/dots-alok/ --work-tree=$HOME'
+alias dots='/usr/bin/git --git-dir=$HOME/dots-alok/ --work-tree=$HOME'
 
 # Exports - 
 export _JAVA_AWT_WM_NONREPARENTING=1
 export PATH="$HOME/.android-studio/bin:$PATH"
-export GOROOT="/usr/bin/go"
-export PATH=$"$PATH:$GOROOT/bin"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$HOME/bin:$PATH"
+export GOPATH="$HOME/go"
+
 eval "$(starship init zsh)"
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
